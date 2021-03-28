@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <style>
+        .container {
+            padding-left: 30%;
+        }
+    </style>
+    <div class="container">
+        <h1 id="title">Employee Satisfaction form</h1>
+
+        <p id="description">We are doing employee satisfaction Survey. You can
+            give your opinion by filling this form.
+        </p>
+
+        <form action="#" id="survey-form">
+            <label for="name" id="name-label">Your Name</label>
+            <input type="text" id="name" placeholder="enter your name" required><br><br>
+            <label for="email" id="email-label">Your Email</label>
+            <input type="email" id="email" placeholder="enter email" required><br><br>
+            <label for="number" id="number-label">Phone No.</label>
+            <input type="number" id="number" min="5555555555" max="9999999999" placeholder="phone number">
+
+            <p>Select your gender:</p>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label><br>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label><br>
+            <input type="radio" id="other" name="gender" value="other">
+            <label for="other">Other</label>
+
+            <p>How would you describe your job satisfaction level ?</p>
+            <input type="radio" name="satisfaction-level" value="satisfied">
+            <label for="satisfied">Satisfied</label><br>
+            <input type="radio" name="satisfaction-level" value="dissatisfied">
+            <label for="dissatisfied">Dissatisfied</label><br>
+            <input type="radio" name="satisfaction-level" value="netural">
+            <label for="netural">Netural</label>
+
+            <p>Select your department</p>
+            <select name="department" id="dropdown">
+                <option value="sells">Sells</option>
+                <option value="production">Production</option>
+                <option value="Testing">Testing</option>
+            </select>
+
+            <p>Facilities for employees</p>
+            <input type="checkbox" value="bus">
+            <label for="bus"> Bus facility</label><br>
+            <input type="checkbox" value="washroom">
+            <label for="washroom"> Washroom facility</label><br>
+            <input type="checkbox" value="water">
+            <label for="water"> Drinkable water facility</label><br>
+            <input type="checkbox" value="lunch">
+            <label for="lunch"> lunch facility</label><br>
+            <input type="checkbox" value="refreshment">
+            <label for="refreshment"> Tea or Coffee facility</label>
+
+            <p>Add your comments here</p>
+            <textarea id="comments" rows="4" cols="50" placeholder="Additional comments">
+        </textarea>
+            <br><br>
+
+            <input type="submit" value="Submit" id="submit">
+        </form>
+    </div>
+</body>
+
+</html>
